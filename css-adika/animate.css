@@ -1,0 +1,130 @@
+/* .lessons{
+    display: flex;
+    flex-wrap: wrap;
+} */
+/* .lesson{
+    flex-grow: 12;
+} */
+.lessons{
+    margin-left: 5%;
+}
+.lesson {
+  flex-basis: 100%;
+  width: 310px;
+}
+
+.menu-icon:active{
+    display: none;
+}
+
+.marquee{
+    background-color: #f7f7f7;
+    margin-bottom: 0px;
+}
+.icon-marque{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.icon-marque h3{
+    font-family: "Lucida Grande";
+}
+
+/* welcome */
+.animate-title{
+    color: #0c0c0c;
+    opacity: 0;
+    animation-name: judul;
+    animation-duration: 7s;
+}
+.welcome {
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    width: 100%;
+    height: 700px;
+    background: rgba(255, 0, 0, 0);
+    position: fixed;
+    animation-name: example;
+    animation-duration: 7s;
+}
+
+@keyframes judul {
+    0%   {opacity: 1;}
+    25%  {opacity: 1;}
+    50%  {opacity: 1;}
+    75%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes example {
+    0%   {background: rgba(102, 0, 0, 0.9); left:0px; top:0px;z-index: 21;}
+    25%  {background: rgba(293, 255, 0, 0.7); left:0px; top:0px;z-index: 21;}
+    50%  {background: rgba(36, 79, 118, 0.5); top:0px;z-index: 21;}
+    75%  {background: rgba(5, 142, 28, 0.3); top:0px;z-index: 21;}
+    100% {background: rgba(225, 224, 0, 0); top:0px;z-index: 21;}
+}
+
+/* welcome toko */
+.animate-title-toko{
+    color: #0c0c0c;
+    opacity: 0;
+    animation-name: judul-toko;
+    animation-duration: 4s;
+}
+.welcome-toko {
+    opacity: 0;
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    width: 100%;
+    height: 700px;
+    background: rgba(255, 0, 0, 0);
+    position: fixed;
+    animation-name: example-toko;
+    animation-duration: 4s;
+}
+
+@keyframes judul-toko {
+    0%   {opacity: 1;}
+    25%  {opacity: 1;}
+    50%  {opacity: 1;}
+    75%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes example-toko {
+    0%   {background: rgba(102, 0, 0, 1); left:0px; top:0px;z-index: 21;opacity: 0.5;}
+    25%  {background: rgba(293, 255, 0, 1); left:0px; top:0px;z-index: 21;opacity: 0.5;}
+    50%  {background: rgba(36, 79, 118, 1); top:0px;z-index: 21;opacity: 0.5;}
+    75%  {background: rgba(5, 142, 28, 1); top:0px;z-index: 21;opacity: 0.3;}
+    100% {background: rgba(225, 224, 0, 1); top:0px;z-index: 21;opacity: 0.1;}
+}
+
+/* Loder */
+.loader {
+    opacity: 0;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1s linear; /*infinite;*/
+    animation: spin 1s linear; /*infinite;*/
+    /* animation-duration: 7s; */
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    5% { transform: rotate(0deg); }
+    10% { transform: rotate(0deg); }
+    15% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);opacity: 1; }
+  }

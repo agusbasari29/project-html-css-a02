@@ -1,0 +1,532 @@
+/* Mulai code Anda dari baris terakhir */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://img.freepik.com/free-psd/online-shopping-with-laptop-mockup-template-shopping-elements_1150-38896.jpg?w=740&t=st=1658886737~exp=1658887337~hmac=8d8062d22f18bef0e8fafabc9af020b0dd024f054f9f4f6a5ac5e9d1be5c8e3e);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 45px;
+  margin-top: 11px;
+  color: white;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 15%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+tr,th,td{
+  text-align: left;
+  border-top: 1px solid gray;
+  padding: 5px;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon img{
+  width: 200px;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.lesson-icon p {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  color: white;
+}
+
+.label-toko{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #305a63;
+}
+
+.lesson-icon:hover img {
+  opacity: 0.3;
+}
+
+.lesson-icon:hover .label-toko {
+  opacity: 1;
+}
+
+.label-toko {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: rgba(34, 49, 52, 0.9);
+  cursor: pointer;
+  box-shadow: 0 7px #0c343d;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.btn-beli {
+  width: 100%;
+  padding: 11px 40px;
+  background-color: #38761d;
+  cursor: pointer;
+  box-shadow: 0 7px #1c3b0e;
+}
+
+.btn-beli:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer .lesson{
+  margin: 11px;
+}
+footer img {
+  width: 125px;
+}
+
+footer h2{
+  color: white;
+}
+footer h3{
+  color: #cecece;
+}
+footer .maps{
+  color: #f6685e;
+}
+footer .phones{
+  color: #cecece;
+}
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgba(34, 49, 52, 0.9)!important;
+  text-align: left!important;
+  position: absolute;
+  width: 100%;
+}
+
+/* Ketik code Anda di bawah */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  .top-wrapper h1 {
+      font-size: 32px;
+  }
+  .lesson {
+      width: 50%;
+      margin-bottom: 50px;
+  }
+  .heading h2 {
+      font-size: 20px;
+  }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+  .lesson-wrapper{
+    padding-left: 20%;
+  }
+  .header-right {
+    display: none;
+  }
+  .top-wrapper {
+      text-align: left;
+  }
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .btn {
+      width: 100%;
+  }
+  .facebook {
+      margin-bottom: 10px;
+  }
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+}
+ .menu-icon {
+    display: block;
+ }
+ .lesson {
+    width: 100%;
+}
+footer {
+    text-align: center;
+}
+}
+
+/* animate form */
+
+.main-form{
+  position:relative;
+  margin: 1px;
+  padding-bottom: 11px;
+}
+.main-form label{
+  position:absolute;
+  left: 25%;
+  font-size: 18px;
+  font-weight: 200;
+  color: #cecece;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+/* input toko */
+.input-nama-toko{
+  top: 10px;
+}
+.write-nama-toko{
+  margin-top: 3px;
+}
+.write-nama-toko:focus~.input-nama-toko {
+  display:block;
+  color: black;
+  top: -15px;
+  font-size: 14px;
+}
+
+.write-nama-toko:focus~.enter-nama-toko {
+  top: 42px;
+  background-color: #0F1F7A;
+  position: absolute;
+  content: ' ';
+  height: 1px;
+  right: 45%;
+  transform: scaleX(5)
+
+}
+/* end input toko */
+
+/* input pemilik toko */
+.input-pemilik-toko{
+  top: 75px;
+}
+.write-pemilik-toko{
+  margin-top: 30px;
+}
+.write-pemilik-toko:focus~.input-pemilik-toko {
+  display:block;
+  color: black;
+  top: 57px;
+  font-size: 14px;
+}
+
+.write-pemilik-toko:focus~.enter-pemilik-toko {
+  top: 112px;
+  background-color: #0F1F7A;
+  position: absolute;
+  content: ' ';
+  height: 1px;
+  right: 45%;
+  transform: scaleX(5)
+
+}
+/* end input pemilik toko */
+
+/* Email */
+.input-email-toko{
+  top: 155px;
+}
+.write-email-toko{
+  margin-top: 30px;
+}
+.write-email-toko:focus~.input-email-toko {
+  display:block;
+  color: black;
+  top: 130px;
+  font-size: 14px;
+}
+
+.write-email-toko:focus~.enter-email-toko {
+  top: 182px;
+  background-color: #0F1F7A;
+  position: absolute;
+  content: ' ';
+  height: 1px;
+  right: 45%;
+  transform: scaleX(5)
+
+}
+/* end Email */
+
+/* Password */
+.input-password-toko{
+  top: 223px;
+}
+.write-password-toko{
+  margin-top: 30px;
+}
+.write-password-toko:focus~.input-password-toko {
+  display:block;
+  color: black;
+  top: 200px;
+  font-size: 14px;
+}
+
+.write-password-toko:focus~.enter-password-toko {
+  top: 252px;
+  background-color: #0F1F7A;
+  position: absolute;
+  content: ' ';
+  height: 1px;
+  right: 45%;
+  transform: scaleX(5)
+
+}
+/* end Password */
+.enter-password-toko,.enter-email-toko,.enter-nama-toko,.enter-pemilik-toko{
+  transition: all ease 0.5s;
+  width: 10.1%;
+  transform: scaleX(1)
+
+}
+
+textarea, input { 
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #cecece;
+  height: 40px;
+  width: 50%;
+}
+
+input:focus{
+  content
+}
+
+/* Flip animate */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.title-toko{
+  color:#5f5d60;
+  margin-top: 11px;
+  margin-bottom: 15px;
+}
+
+.btn-item{
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+.icon-kunjungi{
+  margin-left: 5px;
+}
